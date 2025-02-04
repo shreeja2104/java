@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class hello {
+    public static void main(String[] args) {
+        // Create Scanner object to read input
+        Scanner sc = new Scanner(System.in);
+        
+        // Ask for the first number
+        System.out.println("Enter the first number:");
+        int a = sc.nextInt();
+        
+        // Ask for the second number
+        System.out.println("Enter the second number:");
+        int b = sc.nextInt();
+        
+        // Compare the two numbers
+        if (a > b) {
+            System.out.println("a is the bigger number: " + a);
+        } else if (b > a) {
+            System.out.println("The bigger number is: " + b);
+        } else {
+            System.out.println("Both numbers are equal.");
+        }
+        
+        // Close the scanner
+        sc.close();
+    }
+}
